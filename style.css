@@ -29,3 +29,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+.button{
+    border-radius: 12px ;
+    background-color: white;
+    border: solid grey;
+    color:black;
+
+}
