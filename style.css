@@ -5,17 +5,27 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 5px;
 }
 
-.w3-right .w3-bar-item {
-    font-size: 18px; 
-  }
+.w3-right .w3-bar-item {font-size: 18px; }
 
 .nav-logo {
     height: 80px;
     vertical-align: middle;
-    
-    
-  }
-  .nav-container {
+}
+
+.nav-container {
     display: flex;
     align-items: center;
-  }
+    margin-right: auto;
+}
+
+.nav-bar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
