@@ -82,8 +82,8 @@
               x[i].style.display="none";
             }
             index ++; 
-            if(index>x.length){index=1}
-            x[index-1].style.display="block";
+            if(index>x.length){index=1} //if the index exceeds, it loops back to the first slide
+            x[index-1].style.display="block"; //display the current slide
             setTimeout(carousel, 2000);
           }
 
