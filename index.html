@@ -39,8 +39,64 @@
 
     <!--Page Content-->
     <div class="w3-content" style="max-width:1100px">
+
+      <!-- Menu Section -->
+      <div class="w3-row w3-padding-64" id="menu">
+        <div class="w3-col l6 w3-padding-large"  style="background-color: beige;">
+          <h1 class="w3-center">Our Menu</h1><br>
+          <h4>Hotteok</h4>
+          <p class="w3-text-grey">Walnut, brown sugar stuffed sugar cookie</p><br>
+          <h4>item2</h4>
+          <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+          <h4>item3</h4>
+          <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+          <h4>item4</h4>
+          <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+          
+          <span style="font-size: x-large;">&#8230;</span>
+          <div class="w3-center">
+            <a href="url" class="w3-bar-item w3-button button" style="font-size:large;">Menu</a> 
+          </div>
+          
+        </div>
+
+
+        <div class="w3-col l6 w3-padding-large">
+          <div class="w3-content w3-section" style="max-width:700px;">
+            <img src="image/cookie1.JPG" class="slide" alt="Menu" style="width:100%">
+            <img src="image/cookie2.JPG" class="slide" alt="Menu" style="width:100%">
+            <img src="image/cookie3.JPG" class="slide" alt="Menu" style="width:100%">
+          
+          
+          </div>
+        </div>
+        <script>
+          var index = 0;
+          carousel();
+
+          function carousel(){
+            var i; 
+            var x = document.getElementsByClassName("slide");
+
+            for (i=0; i<x.length; i++){
+              x[i].style.display="none";
+            }
+            index ++; 
+            if(index>x.length){index=1}
+            x[index-1].style.display="block";
+            setTimeout(carousel, 2000);
+          }
+
+        </script>
+
+
+      </div>
+
+
+      <hr>
+
       <!--About Section-->
-      <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-row w3-padding-64" id="about" >
         <div class="w3-col m6 w3-padding-large w3-hide-small">
           <img src="image/store.jpg" class="w3-round w3-image " alt="Table Setting" width="600" height="750">
         </div>
@@ -52,33 +108,6 @@
           <p class="w3-large w3-text-grey">Our mission is to deliver exceptional culinary experiences that delight the senses. We believe in the power of food to bring people together and create lasting memories. Whether you're joining us for a casual meal or a special occasion, we strive to make every visit extraordinary.</p>
         </div>
       </div>
-      <hr>
-
-      <!-- Menu Section -->
-      <div class="w3-row w3-padding-64" id="menu">
-        <div class="w3-col l6 w3-padding-large">
-          <h1 class="w3-center">Our Menu</h1><br>
-          <h4>Chicken Mayo DeopBap</h4>
-          <p class="w3-text-grey">Tangy meets sweet with chicken cubes smothered in sticky glaze...</p><br>
-          <h4>item2</h4>
-          <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-          <h4>item3</h4>
-          <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-          <h4>item4</h4>
-          <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-          
-          <span style="font-size: xx-large;">&#8230;</span>
-          <div class="w3-center">
-            <a href="url" class="w3-bar-item w3-button button" style="font-size:large;">Menu</a> 
-          </div>
-          
-        </div>
-        <div class="w3-col l6 w3-padding-large">
-          <img src="image/food1.png" class="w3-round w3-image" alt="Menu" style="width:100%">
-        </div>
-      </div>
-
-
       <hr>
 
       <!--Contact Section-->
