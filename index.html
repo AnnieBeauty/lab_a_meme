@@ -31,7 +31,35 @@
 
     <!-- Header -->
     <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-      <img class="w3-image" src="image/sample1.png" alt="food image" width="1600" height="600">
+      <!--<img class="w3-image" src="image/sample1.png" alt="food image" width="1600" height="600">-->
+
+      <div class="w3-image">
+        <div>
+          <img src="image/cookie1.JPG" class="headslide" alt="header" width="1600" height="600">
+          <img src="image/cookie2.JPG" class="headslide" alt="header" width="1600" height="600">
+          <img src="image/cookie3.JPG" class="headslide" alt="header" width="1600" height="600">
+        </div>
+      </div>
+      <script>
+        var index = 0;
+        carousel();
+
+        function carousel(){
+          var i; 
+          var x = document.getElementsByClassName("headslide");
+
+          for (i=0; i<x.length; i++){
+            x[i].style.display="none";
+          }
+          index ++; 
+          if(index>x.length){index=1} //if the index exceeds, it loops back to the first slide
+          x[index-1].style.display="block"; //display the current slide
+          setTimeout(carousel, 2000);
+        }
+
+      </script>
+
+      
       <div class="w3-display-bottomleft w3-padding-large w3-opacity">
         <h1 class="w3-xxlarge">Le Lab</h1>
       </div>
@@ -150,8 +178,8 @@
 
       <div class="w3-center w3-padding-16">
         <p>Follow us on</p>
-        <a href="https://www.instagram.com/lab.a.meme/?locale=en_US%2Cen_US" class="w3-bar-item w3-button"><i class="fab fa-instagram"></i>Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=100079756891087&paipv=0&eav=AfZlnP-0nrrw9vPlTnMiam2eKLJxu4I2v0YnmbmvmP68M5gBAwVPEvxvrka_cx0iums" class="w3-bar-item w3-button"><i class="fa-brands fa-facebook"></i>Facebook</a>
+        <a href="https://www.instagram.com/lab.a.meme/?locale=en_US%2Cen_US" class="w3-bar-item w3-button"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100079756891087&paipv=0&eav=AfZlnP-0nrrw9vPlTnMiam2eKLJxu4I2v0YnmbmvmP68M5gBAwVPEvxvrka_cx0iums" class="w3-bar-item w3-button"><i class="fa-brands fa-facebook"></i> Facebook</a>
       </div>
 
 
