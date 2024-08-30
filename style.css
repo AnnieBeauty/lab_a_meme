@@ -52,22 +52,35 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.button{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 10px;
-    color: rgba(243, 238, 245, 0.978);
-    background: rgb(145, 92, 182);
-    font-weight: normal;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in-out;
-    border-color:  rgb(145, 92, 182);
+
+.filled-button {
+    background-color: #8A4DFF; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
 }
 
-.button:hover {
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 20px rgba(145, 92, 182, .4);
+.filled-button:hover {
+    transform: scale(1.05); 
 }
-
+  
+.outline-button {
+    background-color: transparent;
+    color: #8A4DFF; 
+    padding: 10px 55px;
+    border: 1px solid #8A4DFF; 
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+  
+.outline-button:hover {
+    background-color: #8A4DFF;
+    color: #fff; 
+}
