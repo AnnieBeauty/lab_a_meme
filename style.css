@@ -159,3 +159,25 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     margin: 12px;
 }
+
+
+.info{
+    letter-spacing: 0.5px;
+    margin-bottom:6px ;
+    font-size: large;
+}
+
+.separator{
+    width: 20%;
+    height: 6px;
+    background: #17537a;
+    margin-bottom: 16px;
+}
+
+.additional-info{
+    border-top: 1px solid #bbb;
+    margin-top: 12px;
+    padding: 28px;
+    padding-bottom:0;
+  
+}
